@@ -1,0 +1,81 @@
+.home-banner {
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0; /* Adjust padding as needed */
+    color: #ffffff; /* Set text color to white for better visibility */
+}
+
+.home-banner h2 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 20px;
+}
+
+.home-banner p {
+    font-size: 1.1rem; /* Adjust font size as needed */
+    margin-bottom: 30px;
+}
+
+.home-banner .btn-primary {
+    font-size: 1.1rem; /* Adjust font size as needed */
+}
+
+/* Contact Form Styles */
+#contact {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+#contact p {
+    margin-bottom: 20px;
+}
+
+#contactForm {
+    max-width: 500px;
+}
+
+#contactForm .form-group {
+    margin-bottom: 20px;
+}
+
+#contactForm label {
+    font-weight: bold;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm input[type="tel"],
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+#contactForm textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+#contactForm button[type="submit"] {
+    width: 100%;
+}
+
+#about {
+    position: relative; /* Ensure positioning context for absolutely positioned elements */
+    padding: 50px; /* Adjust padding as needed */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    z-index: -1; /* Move the image behind other content */
+}

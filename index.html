@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Social Media Awareness</title>
+    <!-- User CSS -->
+    <link rel="stylesheet" href="css/user.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        /* Navbar */
+        .navbar {
+            background-color: #343a40 !important;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+
+        .navbar-brand:hover,
+        .navbar-nav .nav-link:hover {
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="body-overlay"></div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Social Media Awareness</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="form-inline my-2 my-lg-0">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Login/Register
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#" onclick="loginUser()">Login as User</a>
+                            <a class="dropdown-item" href="#" onclick="loginAdmin()">Login as Admin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </nav>
+
+        <!-- Content -->
+      <!-- Content -->
+<div class="container mt-5 home-banner" style="background-image: url('path/to/home-banner-background.jpg');">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Join Us in Making a Difference!</h2>
+            <p>Welcome to Social Awareness, where we believe in the power of collective action to drive positive change. Together, we can raise awareness, spark conversations, and take meaningful steps towards a better world. Explore, connect, and make a difference with us today.</p>
+            <button class="btn btn-primary" id="getStartedBtn">  Get Started</button>
+        </div>
+        <div class="col-md-6">
+            <img src="./img/home-banner-image.png" alt="Home Banner Image" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+
+        <!-- Page Content -->
+        <div class="container mt-4" id="campaigns">
+            <h2 class="text-center mb-4">Campaigns</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Place</th>
+                        <th>Contact</th>
+                    </tr>
+                </thead>
+                <tbody id="campaignList">
+                    <!-- Campaigns will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+
+      
+
+        <div class="container mt-5" id="contact">
+            <h2>Have Question In Mind?</h2>
+            <p>Let Us Help You</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+        <div class="container mt-5" id="about">
+           
+            <h2>About</h2>
+            <p><strong>Our Story</strong></p>
+            <p>At Social Awareness, our journey began with a simple belief: that every voice matters, and every action counts. Founded on the principle of collective impact, we strive to create a platform where individuals and businesses can come together to raise awareness, foster dialogue, and drive positive change in our communities and beyond.</p>
+            <p>With a shared vision of a more just and sustainable world, we invite you to join us in our mission to make a difference.</p>
+            <img src="./img/about-background-image.png" alt="About Background Image" class="background-image">
+            <button class="btn btn-primary" id="joinUsBtn">Join Us</button>
+            <!-- Watch Video button -->
+            <button class="btn btn-secondary" id="watchVideoBtn">Watch Video</button>
+        </div>
+        
+        
+        
+        <!-- Footer -->
+        <footer class="footer mt-5">
+            <div class="container">
+                <p class="text-center">&copy; 2024 Social Media Awareness - All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Retrieve campaigns from localStorage
+            var campaigns = JSON.parse(localStorage.getItem('campaigns')) || [];
+
+            // Display campaigns
+            displayCampaigns(campaigns);
+
+            // Function to display campaigns
+            function displayCampaigns(campaigns) {
+                var campaignList = $("#campaignList");
+                campaignList.empty();
+                campaigns.forEach(function (campaign) {
+                    var row = $("<tr>");
+                    row.append($("<td>").text(campaign.id));
+                    row.append($("<td>").text(campaign.name));
+                    row.append($("<td>").text(campaign.place));
+                    row.append($("<td>").text(campaign.contact));
+                    campaignList.append(row);
+                });
+            }
+        });
+
+   
+    // Handle Join Us button click
+    document.getElementById('joinUsBtn').addEventListener('click', function() {
+        // Scroll to the Contact section
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Handle Watch Video button click
+    document.getElementById('watchVideoBtn').addEventListener('click', function() {
+        // Open the YouTube video link in a new tab
+        window.open('https://www.youtube.com/watch?v=f99ERZlTxFA', '_blank');
+    });
+
+
+
+        function loginUser() {
+            window.location.href = "index.html";
+        }
+
+        function loginAdmin() {
+            window.location.href = "home.html";
+        }
+
+
+        $(document).ready(function () {
+        // Smooth scroll to contact section when Join Us button is clicked
+        $("#joinUsBtn").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#contact").offset().top
+            }, 1000); // Adjust the duration as needed
+        });
+
+        // Handle click on Watch Video button
+        $("#watchVideoBtn").click(function () {
+            window.location.href = "https://www.youtube.com/watch?v=f99ERZlTxFA";
+        });
+    });
+
+    // Smooth scrolling for anchor links
+$(document).ready(function() {
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function() {
+                window.location.hash = hash;
+            });
+        }
+    });
+});
+
+
+    </script>
+</body>
+
+</html>
